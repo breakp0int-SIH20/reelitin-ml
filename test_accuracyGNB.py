@@ -1,8 +1,8 @@
-# Support Vector Machine ML Model
+# Gaussian Naive Bayes ML Model
 
 import numpy as np
 import pickle
-from sklearn import svm
+from sklearn.naive_bayes import GaussianNB
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
@@ -26,7 +26,7 @@ Y = np.array(data['result'])
 # Train Test Split
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.25)
 
-classifier = svm.SVC(gamma=0.9)
+classifier = GaussianNB()
 classifier.fit(X_train, Y_train)
 
 # Accuracy Testing

@@ -1,6 +1,7 @@
+# K-Nearest Neighbours ML Model
+
 import numpy as np
-import pandas as pd
-import sklearn, pickle, pymongo
+import pickle
 from sklearn import neighbors
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
